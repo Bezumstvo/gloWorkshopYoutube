@@ -7,7 +7,6 @@
   <title>YoutubeJS</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/youtuber.css">
-  <script src="./js/script.js" type="text/javascript"></script> 
 </head>
 
 <body>
@@ -95,7 +94,7 @@
     <div class="sidebarMenu">
       <ul>
         <li class="active" id="yt_main">
-          <a href="./index.html">
+          <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8"></path>
             </svg>
@@ -196,10 +195,7 @@
     </div>
   </main>
 
-  <div class="youTuberModal">
-    <div id="youtuberClose">&#215;</div>
-    <div id="youtuberContainer"></div>
-  </div>
+
 
   <div class="keyboard">
     <div class="keyboard-wrapper" style="width: 495px; user-select: none; left: 629px; top: 231px;" tabindex="-1">
@@ -476,26 +472,26 @@
                     </td>
                   </tr>
                   <tr style="user-select: none;">
-                      <td style="margin: 0; padding: 0; border: 0 none; user-select: none;">
-                        <table style="margin: 0; padding: 0; user-select: none;">
-                          <tbody style="user-select: none;">
-                            <tr style="user-select: none;">
-                              <td style="margin: 0; padding: 0; border: 0 none; user-select: none;">
-                                <button
-                                  style="margin: 2px; width: 95px; height: 29px; user-select: none;">en</button>
-                              </td>
-                              <td style="margin: 0; padding: 0; border: 0 none; user-select: none;">
-                                <button style="margin: 2px; width: 293px; height: 29px; user-select: none;"></button>
-                              </td>
-                              <td style="margin: 0; padding: 0; border: 0 none; user-select: none;">
-                                <button
-                                  style="margin: 2px; width: 95px; height: 29px; user-select: none; visibility: hidden"></button>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
+                    <td style="margin: 0; padding: 0; border: 0 none; user-select: none;">
+                      <table style="margin: 0; padding: 0; user-select: none;">
+                        <tbody style="user-select: none;">
+                          <tr style="user-select: none;">
+                            <td style="margin: 0; padding: 0; border: 0 none; user-select: none;">
+                              <button
+                                style="margin: 2px; width: 95px; height: 29px; user-select: none;">en</button>
+                            </td>
+                            <td style="margin: 0; padding: 0; border: 0 none; user-select: none;">
+                              <button id="space" style="margin: 2px; width: 293px; height: 29px; user-select: none;"></button>
+                            </td>
+                            <td style="margin: 0; padding: 0; border: 0 none; user-select: none;">
+                              <button
+                                style="margin: 2px; width: 95px; height: 29px; user-select: none; visibility: hidden"></button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </td>
@@ -505,14 +501,15 @@
     </div>
   </div>
 
-  <div class="auth" style="display: none">
+  <div class="auth">
     <div class="auth_wrap">
       <button id="authorize">ВОЙТИ</button>
 
     </div>
   </div>
-
-
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="./js/script.js">
+</script>
 
 </body>
 
