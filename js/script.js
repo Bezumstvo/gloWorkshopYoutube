@@ -1,4 +1,6 @@
 'use strict';
+import { API_KEY, CLIENT_ID } from '../env.js';
+
 document.addEventListener('DOMContentLoaded', () => {
 /* <screen keyboard> */
 {
@@ -96,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 /* </menu> */
 /* <Modal> */
-/*
+
 {
 const youtuber = () => {
 
@@ -159,14 +161,12 @@ const youtuber = () => {
     youtuber();
   }
 }
-*/
+
 /* </Modal> */
 
 /* <API> */
-/*
+
 {
-  const API_KEY = 'AIzaSyC2wQ5A4450vaXIM9efyrWD6vFekTAK-18';
-  const CLIENT_ID = '731282509146-fqk9b684lk93b6tstm7dudeoo8u5js9g.apps.googleusercontent.com';
 
   {
       const authBlock = document.querySelector('.auth');
@@ -192,12 +192,16 @@ const youtuber = () => {
               .catch(errorAuth);
       };
 
-      buttonAuth.addEventListener('click', () => {
-          authenticate().then(loadClient)
-      });
+//      buttonAuth.addEventListener('click', () => {
+        window.addEventListener("DOMContentLoaded", (e) => {
+            setTimeout( (e)=> {
+                authenticate().then(loadClient)
+            }, 2000)
+        })
+//      });
 
   }
-*/
+
   //запросы
   {
       const gloTube = document.querySelector('.logo-academy');
@@ -323,6 +327,6 @@ const youtuber = () => {
           searchForm.elements[0].value = '';
       });
   }
-//}
+}
   
 });
