@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 }
 /* </menu> */
 /* <Modal> */
+/*
 {
 const youtuber = () => {
 
@@ -158,9 +159,11 @@ const youtuber = () => {
     youtuber();
   }
 }
+*/
 /* </Modal> */
 
 /* <API> */
+/*
 {
   const API_KEY = 'AIzaSyC2wQ5A4450vaXIM9efyrWD6vFekTAK-18';
   const CLIENT_ID = '731282509146-fqk9b684lk93b6tstm7dudeoo8u5js9g.apps.googleusercontent.com';
@@ -194,7 +197,7 @@ const youtuber = () => {
       });
 
   }
-
+*/
   //запросы
   {
       const gloTube = document.querySelector('.logo-academy');
