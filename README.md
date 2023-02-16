@@ -5,7 +5,7 @@ WorkShop JavaScript
 
 Praktice in Youtube API and JS.
 Create virtual Keyboard, youTube search and show video
-- [DEMO](https://sapr0nov.github.io/gloWorkshopYoutube/) - HTML
+- [DEMO](https://sapr0nov.github.io/test_gloWorkshopYoutube/) - HTML
 
 ## Installation
 
